@@ -1,0 +1,15 @@
+.navbar {
+  padding: 16px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255 255 255 / 25%);
+  border-radius: 12px;
+  color: white;
+}
+
+.navbar-title {
+  font-size: 32px;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.buttons-container button div {
+  font-size: 18px;
+  font-weight: bold;
+}
