@@ -7,9 +7,21 @@
   background: rgb(255 255 255 / 25%);
   border-radius: 12px;
   color: white;
+  gap: 12px;
 }
 
 .navbar-title {
   font-size: 32px;
   font-weight: bold;
+}
+
+.info {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
 }

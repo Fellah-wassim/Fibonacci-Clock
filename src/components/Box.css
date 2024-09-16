@@ -1,0 +1,11 @@
+.box {
+  border: 0.1px solid #2b2f38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+}

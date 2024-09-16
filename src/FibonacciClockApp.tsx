@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Box from "./components/Box";
+
 import {
   FIBONACCI_SERIES,
   getRandomFibonacciRepresentation,
@@ -9,6 +9,7 @@ import "./App.css";
 import Clock from "./components/Clock";
 import Navbar from "./components/Navbar";
 import BackNextButtons from "./components/BackNextButtons";
+import { FibonacciGrid } from "./components/FibonacciGrid";
 
 const FibonacciClockApp: React.FC = () => {
   const [time, setTime] = useState({ hour: 1, minute: 30 });
@@ -70,19 +71,14 @@ const FibonacciClockApp: React.FC = () => {
 
   useEffect(() => {
     getColorDivision();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [time]);
 
   return (
     <div className="container">
       <Navbar />
       <Clock time={time} />
-      <div className="fibonacci-clock-grid">
-        <Box className={"boxOfOneA"} color={boxColors.boxOfOneA} label="1" />
-        <Box className={"boxOfOneB"} color={boxColors.boxOfOneB} label="1" />
-        <Box className={"boxOfTwo"} color={boxColors.boxOfTwo} label="2" />
-        <Box className={"boxOfThree"} color={boxColors.boxOfThree} label="3" />
-        <Box className={"boxOfFive"} color={boxColors.boxOfFive} label="5" />
-      </div>
+      <FibonacciGrid boxColors={boxColors} />
       <BackNextButtons adjustTime={adjustTime} />
     </div>
   );

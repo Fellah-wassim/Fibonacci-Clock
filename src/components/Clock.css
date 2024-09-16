@@ -40,11 +40,16 @@
   position: absolute;
   top: calc(50% - 5px);
   left: calc(50% - 5px);
-  border: 1px solid black;
+  border: 1px solid #2b2f38;
 }
 
 .time {
   text-align: center;
   font-size: 60px;
   color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #2b2f38;
 }

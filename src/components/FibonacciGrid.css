@@ -1,0 +1,36 @@
+.boxOfOneA {
+  grid-area: boxOfOneA;
+}
+.boxOfOneB {
+  grid-area: boxOfOneB;
+}
+.boxOfTwo {
+  grid-area: boxOfTwo;
+}
+.boxOfThree {
+  grid-area: boxOfThree;
+}
+.boxOfFive {
+  grid-area: boxOfFive;
+}
+
+.fibonacci-clock-grid {
+  display: grid;
+  grid-template-areas:
+    "boxOfTwo boxOfOneA boxOfFive boxOfFive boxOfFive boxOfFive"
+    "boxOfTwo boxOfOneB boxOfFive boxOfFive boxOfFive boxOfFive"
+    "boxOfThree boxOfThree boxOfFive boxOfFive boxOfFive boxOfFive"
+    "boxOfThree boxOfThree boxOfFive boxOfFive boxOfFive boxOfFive";
+  width: 500px;
+  height: 200px;
+  border: 1px solid #2b2f38;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .fibonacci-clock-grid {
+    width: 320px;
+    height: 160px;
+  }
+}
