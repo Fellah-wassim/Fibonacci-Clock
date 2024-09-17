@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Fibonacci Clock App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Fibonacci Clock** built with **React** and **TypeScript**. The clock visualizes time using a unique Fibonacci sequence representation where squares of different colors correspond to hours, minutes, and their overlaps. This interactive clock also lets users adjust time in increments of 5 minutes using dynamic buttons.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technologies](#technologies)
+- [Customization](#customization)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Unique Fibonacci Time Representation**: The Fibonacci sequence is used to represent hours and minutes visually using colored boxes.
+- **Dynamic Time Adjustment**: Users can change the time with "Next" and "Back" buttons that adjust time by 5 minutes.
+- **Random Representation**: Time can be randomly represented in different valid Fibonacci number combinations.
+- **Color Coding**:
+  - **Blue**: Represents both hours and minutes (overlap).
+  - **Green**: Represents minutes only.
+  - **Red**: Represents hours only.
+- **Responsive Design**: The clock layout adjusts to screen sizes.
+- **Styled with CSS Grid**: For clear box layout representation.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How It Works
 
-### `npm test`
+The app calculates the current time by breaking it down into hours and minutes. It then maps these values to the Fibonacci sequence \`[1, 1, 2, 3, 5]\` using a random valid representation of time. Each square in the clock is color-coded according to whether it represents hours, minutes, or both.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   \`\`\`bash
+   git clone https://github.com/yourusername/fibonacci-clock-app.git
+   cd fibonacci-clock-app
+   \`\`\`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Make sure you have **Node.js** installed. Then, run the following:
 
-### `npm run eject`
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. **Start the development server:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   \`\`\`bash
+   npm start
+   \`\`\`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. **Visit the app** at \`http://localhost:3000\` in your browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+- Upon starting the app, you will see a grid of squares representing the current time in Fibonacci format.
+- The current time will be displayed in standard digital format.
+- Use the **Next 5 mins** and **Back 5 mins** buttons to adjust the time. The boxes and their colors will update accordingly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React**: UI library for building the application.
+- **TypeScript**: For static typing and catching errors during development.
+- **CSS**: For components styling.
+- **JavaScript/TypeScript utilities**: For calculating valid Fibonacci number representations and assigning colors to the boxes.
