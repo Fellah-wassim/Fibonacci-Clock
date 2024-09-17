@@ -1,4 +1,5 @@
 import { ReactNode, useState } from "react";
+import { Close } from "../../assets/icons/Close";
 import "./usePopup.css";
 
 interface PopupProps {
@@ -9,6 +10,9 @@ interface PopupProps {
 function Popup({ children, onClose }: PopupProps) {
   return (
     <div className="popup-container">
+      <div className="close-icon" onClick={onClose}>
+        <Close width="32" height="32" color="white" />
+      </div>
       <div className="popup">{children}</div>
       <button className="popup-close-button" onClick={onClose}>
         Close
