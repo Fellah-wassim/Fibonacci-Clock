@@ -35,7 +35,7 @@ The app calculates the current time by breaking it down into hours and minutes. 
 
    ```bash
    git clone https://github.com/Fellah-wassim/Fibonacci-Clock.git
-   cd fibonacci-clock-app
+   cd Fibonacci-Clock
    ```
 
 2. **Install dependencies:**
