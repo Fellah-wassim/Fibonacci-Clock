@@ -33,24 +33,24 @@ The app calculates the current time by breaking it down into hours and minutes. 
 
 1. **Clone the repository:**
 
-   \`\`\`bash
-   git clone https://github.com/yourusername/fibonacci-clock-app.git
+   ```bash
+   git clone https://github.com/Fellah-wassim/Fibonacci-Clock.git
    cd fibonacci-clock-app
-   \`\`\`
+   ```
 
 2. **Install dependencies:**
 
    Make sure you have **Node.js** installed. Then, run the following:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Start the development server:**
 
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
 4. **Visit the app** at \`http://localhost:3000\` in your browser.
 
