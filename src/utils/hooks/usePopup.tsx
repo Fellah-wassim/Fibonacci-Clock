@@ -9,10 +9,10 @@ interface PopupProps {
 function Popup({ children, onClose }: PopupProps) {
   return (
     <div className="popup-container">
-      <div>
-        {children}
-        <button onClick={onClose}>Close</button>
-      </div>
+      <div className="popup">{children}</div>
+      <button className="popup-close-button" onClick={onClose}>
+        Close
+      </button>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import {
   getRandomFibonacciRepresentation,
   assignColors,
 } from "./utils/fibonacciUtils";
-import "./App.css";
+import "./FibonacciClockApp.css";
 import Clock from "./components/Clock";
 import Navbar from "./components/Navbar";
 import BackNextButtons from "./components/BackNextButtons";
