@@ -8,10 +8,7 @@ A **Fibonacci Clock** built with **React** and **TypeScript**. The clock visuali
 - [How It Works](#how-it-works)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Technologies](#technologies)
-- [Customization](#customization)
-- [License](#license)
 
 ## Features
 
